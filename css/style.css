@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  /* width: 90%; */
+  background: #f6f6f7;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cart {
+  font-size: 12px;
+}
+
+#cart-img {
+  position: relative;
+}
+
+#my-cart {
+  color: #888888;
+}
+
+#my-cart-label {
+  color: #888888;
+}
+
+#my-cart-label {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.flex-container-sizes {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#small,
+#medium,
+#large {
+  /* flex: 1; */
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 8px 15px;
+  margin-right: 10px;
+}
+
+.size {
+  color: #222222;
+}
+
+.item-label,
+.item-price,
+.item-description,
+.size-label,
+.flex-container-sizes {
+  margin: 20px 0;
+}
+
+.item-price p {
+  color: #222222;
+  font-weight: bold;
+}
+
+.item-label p {
+  color: #222222;
+  font-size: 20px;
+}
+
+.item-description {
+  color: #888888;
+}
+
+.size-label p {
+  font-size: 14px;
+  color: #888888;
+}
+
+.required {
+  color: #c90000;
+}
+
+.add-to-cart {
+  margin: 25px 0;
+}
+
+.add-to-cart a {
+  color: #222222;
+}
+
+#add-to-cart-button {
+  border: 2px solid #222222;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+}
+
+#add-to-cart-button:hover {
+  color: #fff;
+  background: #222222;
+}
+
+.items-added {
+  top: 20;
+  left: 72%;
+  background: #fff;
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  padding: 10px;
+  overflow: auto;
+  visibility: hidden;
+}
+
+#grid-mobile-small {
+  visibility: hidden;
+}
+
+.grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .image-container {
+    width: 80%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  #cart-img {
+    visibility: hidden;
+  }
+
+  #my-cart-label {
+    visibility: visible;
+  }
+
+  #my-cart {
+    margin-left: -16px;
+  }
+}

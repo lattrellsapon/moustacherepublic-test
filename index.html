@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Moustache Republic | Welcome</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="flex-container">
+          <div class="cart">
+            <p id="my-cart-label">My Cart</p>
+            <a href="" id="my-cart"
+              ><i class="fas fa-shopping-cart" id="cart-img"></i> ( 0 )</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="items-added" id="items-to-buy">
+        <div id="notify-user"></div>
+        <div class="flex-container-added-items">
+          <div>
+            <div class="grid-mobile" id="grid-mobile-small">
+              <div>
+                <img src="./images/classic-tee.jpg" alt="" />
+              </div>
+              <div>
+                <div class="">
+                  <p>Classic Tee</p>
+                </div>
+                <div class="">
+                  <p><span id="quantity">0</span> x $75.00</p>
+                </div>
+                <div class="">
+                  <p>Size: S</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="image-container">
+          <img src="./images/classic-tee.jpg" alt="" />
+        </div>
+        <div>
+          <div class="item-label">
+            <p>Classic Tee</p>
+          </div>
+          <div class="item-price">
+            <p>$75.00</p>
+          </div>
+          <div class="item-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in sed
+              dolorum similique autem aperiam commodi id. Aspernatur dolores
+              necessitatibus quasi omnis, possimus rerum optio porro nam
+              pariatur, quis dignissimos dolore officia aut fuga sapiente, odio
+              maxime exercitationem velit ab quas expedita perferendis? Labore
+              placeat illum iste perspiciatis autem dignissimos.
+            </p>
+          </div>
+          <div class="size-label">
+            <p>
+              SIZE<span class="required">*</span><span id="size-chosen"></span>
+            </p>
+          </div>
+          <div class="flex-container-sizes">
+            <div id="small">
+              <p><a href="" class="size" id="select-small">S</a></p>
+            </div>
+            <div id="medium">
+              <p><a href="" class="size" id="select-medium">M</a></p>
+            </div>
+            <div id="large">
+              <p><a href="" class="size" id="select-large">L</a></p>
+            </div>
+          </div>
+          <div class="add-to-cart">
+            <button id="add-to-cart-button">ADD TO CART</button>
+          </div>
+          <div id="user-message"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
